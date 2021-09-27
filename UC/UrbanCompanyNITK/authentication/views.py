@@ -130,7 +130,7 @@ class LoginView(View):
                 if user.is_active:
                     auth.login(request, user)
                     messages.success(request, 'Welcome, '+user.username+ ' You are now logged in. ')
-                    return redirect('ucnitk')
+                    return redirect('\\')
 
             messages.error(request, 'Invalid credentials try again')
             return render(request, 'authentication/login.html')
