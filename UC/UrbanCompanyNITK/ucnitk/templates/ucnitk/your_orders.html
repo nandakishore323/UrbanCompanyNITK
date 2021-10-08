@@ -24,6 +24,7 @@
         <p class="article-content">{{ order.Description}}</p>
         <p class="article-content">{{ order.PreferredTime}}</p>
         <a class="btn btn-primary" href = "{% url 'order-detail' order.id %}">View Order</a>
+        <a class="btn btn-primary" href = "{% url 'review' order.id %}">give review</a>
         </div>
     </article>
     {% endfor %}
