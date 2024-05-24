@@ -14,3 +14,5 @@ source .env
 python3 manage.py runserver
 ```
 6. Go to localhost:8000 in your browser.
+
+7. To check POC
